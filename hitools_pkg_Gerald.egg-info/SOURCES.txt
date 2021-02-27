@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+hitools_pkg/__init__.py
+hitools_pkg_Gerald.egg-info/PKG-INFO
+hitools_pkg_Gerald.egg-info/SOURCES.txt
+hitools_pkg_Gerald.egg-info/dependency_links.txt
+hitools_pkg_Gerald.egg-info/top_level.txt
