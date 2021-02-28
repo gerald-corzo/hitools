@@ -18,6 +18,8 @@ def RMSE(T,S):
 
     return E    
 
+
+
 def MSE(T,S):
     # S Simulater or calculated
     # T Measured
@@ -58,7 +60,12 @@ def PlotValue(Mytext):
     
 
 def Error1(T=np.array([]),S=np.array([])):
-    R={"RMSE": RMSE(T,S), "R.sd_M":np.std(T),"MSE":MSE(T,S),"R.sd_T":np.std(T), "sd_S":np.std(S)}
+    Temp=RMSE(T,S)
+    R={"RMSE":Temp , "sd_T":np.std(T),"MSE":MSE(T,S), "sd_S":np.std(S), 
+    "NRMSE":Temp/np.std(T),
+    "Nash": 1-np.nansum((T-S)**2)/np.nansum((T-np.nanmean(T))**2),
+    "Cor":np.nansum((S-np.nanmean(S))*(T-np.nanmean(T)))/(np.sqrt(np.nansum((S-np.nanmean(S))**2))*np.sqrt(np.nansum((T-np.nanmean(T))**2)))
+    }
     PlotError(T,S)
     PlotValue("RMSE="+str(R["RMSE"]))
     return R
