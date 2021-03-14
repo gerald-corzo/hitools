@@ -1,11 +1,19 @@
-#Statistical errors for time series
-from hitools import Errors
 #Preliminary visual analysis
-from hitools import PLook
+#from .hitools.Visualization.Hydrograph import Basic
+
+#Hydrograph
+#from .hitools.Visualization import Hydrograph
+
+
+#Statistical errors for time series
+#from .hitools.Errors import Errors
 
 
 #Spatial errors
-from hitools import SErrors
+#from .hitools.Errors import SErrors
 
 #Spatiotemporal error measures 
-from hitools import STErros
+#from .hitools.Errors import STErros
+
+
+print("test")
