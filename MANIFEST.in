@@ -1,0 +1,6 @@
+include README.md
+include LICENSE
+recursive-include hitools/data
+recursive-include hitools/data *.csv
+recursive-exclude hitools *.pyc
+global-exclude *.pyc
