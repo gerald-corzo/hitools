@@ -17,6 +17,10 @@ Target are:
 Spatiotemporal analysis of extreme events
 Tracking of spatial patterns
 Categorization of spatial forms and its comparison
+Tracking Airmasses to find contributions of water in a basin per month
+Forecasting drought
+Forecasting floods
+Analysisng syncronicity
 
 
 Modelling with convolutional networks
