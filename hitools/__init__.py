@@ -1,4 +1,4 @@
-__all__=['Errors','Hydrograph','Plot','SErrors','STErrors']
+__all__=['Errors','Hydrograph','Plot','SErrors','STErrors','LoadData']
 
 #Statistical errors for time series
 from hitools import Errors
@@ -11,3 +11,5 @@ from hitools import SErrors
 
 #Spatiotemporal error measures 
 from hitools import STErrors
+
+from hitools import LoadData
